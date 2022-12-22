@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nos_conseils_voyage</title>
+</head>
+<body>
+    <!-- Navigation -->
+
+<main>
+    <nav>
+        
+        <ul class="liste-nav">
+            <li class="item-nav"><a href="index.html">Accueil</a></li>
+            <li class="item-nav"><a href="quefaire.html">Que visiter ?</a></li>
+            <li class="item-nav"><a href="nous_contacter.html">Nous contacter</a></li>
+        </ul>
+        <img src="ressources/menu.svg" alt="logo menu" class="logo-menu">
+     
+</nav>
+    
+    <h1>Voyager au Japon </h1>
+    <!-- Section parallax -->
+
+    <section class="parallax1">
+        <p>冒険に行く</p>
+        <span>Partez à l'aventure</span>
+    </section>
+
+
+    <!-- Section Tarifs -->
+
+    <!-- Section tarifs -->
+
+    <section class="section-tarifs" id="tarifs">
+        <h3>Et si vous souhaiter vous y rendre...</h3>
+        <hr>
+        <div class="container-tarifs">
+
+            <div class="cartes-tarifs">
+                <h4>Première Visite <br> 初診</h4>
+                <span><a href="https://www.terres-lointaines.com/voyage-japon/" target="_blank">voir les tarifs</a></span>
+                <p>✔️ Visite de la ville</p>
+                <p>✔️ Visite des auberges traditionnelles</p>
+                <p>✔️ Les plus beaux sites de l'ancienne capitale</p>
+                <p>❌ Restaurant typique d'exception</p>
+                <p>❌ Balade en canot autour du chateau de Matsué</p>
+                <p>❌ Visite du Centre du Patrimoine Mondial d'Iwami Ginzan</p>
+                <p>❌ Découverte de régions authentiques</p>
+
+            </div>
+
+            <div class="cartes-tarifs">
+                <h4>Authentique <br>オーセンティック</h4>
+                <span><a href="https://www.terres-lointaines.com/inspiration-voyage/voyage-japon/japon-authentique/" target="_blank">voir les tarifs</a></span>
+                <p>✔️ Visite de la ville</p>
+                <p>✔️ Visite des auberges traditionnelles</p>
+                <p>✔️ Les plus beaux sites de l'ancienne capitale</p>
+                <p>✔️ Restaurant typique d'exception</p>
+                <p>✔️ Balade en canot autour du chateau de Matsué</p>
+                <p>❌ Visite du Centre du Patrimoine Mondial d'Iwami Ginzan</p>
+                <p>❌ Découverte de régions authentiques</p>
+
+            </div>
+
+
+            <div class="cartes-tarifs">
+                <h4>Culturel <br>文化的な</h4>
+                <span><a href="https://www.terres-lointaines.com/inspiration-voyage/voyage-japon/japon-culturel/" target="_blank">voir les tarifs</a></span>
+                <p>✔️ Visite de la ville</p>
+                <p>✔️ Visite des auberges traditionnelles</p>
+                <p>✔️ Les plus beaux sites de l'ancienne capitale</p>
+                <p>✔️ Restaurant typique d'exception</p>
+                <p>✔️ Balade en canot autour du chateau de Matsué</p>
+                <p>✔️ Visite du Centre du Patrimoine Mondial d'Iwami Ginzan</p>
+                <p>✔️ Découverte de régions authentiques</p>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+</main>
+    <footer>
+        <p>
+        &copy;Tous Droits Réservés 2022 | <a
+            href="mailto:richard.schulze@laplateforme.io">richard.schulze@laplateforme.io</a></p>
+            <img id="contact_bas" src="ressources/contact.png" alt="">
+                <ul id="footer">
+                <li class="item-nav"><a href="index.html">Accueil</a></li>
+                <li class="item-nav"><a href="quefaire.html">Que visiter ?</a></li>
+                <li class="item-nav"><a href="nous_contacter.html">Nous contacter</a></li>
+            </ul>
+    </footer>
+
+    <script>
+        const btnMenu = document.querySelector('.logo-menu');
+        const menu = document.querySelector('.liste-nav');
+
+        btnMenu.addEventListener('click', function(){
+            menu.classList.toggle('active');
+            })
+
+
+        const allLinks = document.querySelectorAll('.item-nav');
+        allLinks.forEach(function(item){
+            item.addEventListener('click', function(){
+            menu.classList.toggle('active');
+            })
+        })
+
+    </script>
+</body>
+</html>
