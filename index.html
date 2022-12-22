@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil :Le fan club</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        
+        <ul class="liste-nav">
+            
+            <li class="item-nav"><a href="quefaire.html">Que Visiter ?</a></li>
+            
+            <li class="item-nav"><a href="voyager.html">Voyager</a></li>
+            <li class="item-nav"><a href="nous_contacter.html">Nous contacter</a></li>
+        </ul>
+        <img src="ressources/menu.svg" alt="logo menu" class="logo-menu">
+     
+</nav> 
+<main>
+    <div class="fanclub">
+        <h1 id="titrefanclub">Le fan club: JAPON </h1>
+            <div id="video_samourai_gauche"><iframe width="45%" height="50%" src="https://www.youtube.com/embed/XDljIaUIPXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="video_samourai_droite"><iframe width="45%" height="50%" src="https://www.youtube.com/embed/jsUlZeWI4NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>  
+            <p style="color:white;">Les samourais</p>
+    </div>
+    <div class="geek">
+
+        <article>
+                <h2>GEEK</h2><br>
+            Les vêtements traditionnels nippons inspirent la mode mondiale depuis de très nombreuses années, pour ne pas dire depuis les tous débuts de l’industrie de la mode. Le kimono a particulièrement séduit l’Occident, qui se l’est approprié en le modifiant à sa guise, pour donner des robes ou des vestes de style oriental.
+
+            Mais si le Japon a su étendre sa vision de l’esthétique au monde entier, il n’est pas pour autant resté imperméable à ce que le reste du monde avait à lui offrir. En effet, alors que les nouvelles générations abandonnent petit à petit le style japonais pour adopter des pratiques vestimentaires plus occidentales, les américains ont joué un rôle crucial dans le développement d’un nouveau courant vestimentaire : le streetwear.
+                <button><a href="https://www.sitegeek.fr/societe/fan-du-japon-et-de-streetwear-mariez-vos-passions/" target="_blank">SITE_GEEK</a></button>
+        </article>
+        <img id="img_geek" src="ressources/geek.png" alt="">
+    </div>
+
+    <div class="alimentation">
+        <img id="img_geek" src="ressources/geek.png" alt="">
+        <article>
+                <h2>GEEK</h2><br>
+            Les vêtements traditionnels nippons inspirent la mode mondiale depuis de très nombreuses années, pour ne pas dire depuis les tous débuts de l’industrie de la mode. Le kimono a particulièrement séduit l’Occident, qui se l’est approprié en le modifiant à sa guise, pour donner des robes ou des vestes de style oriental.
+
+            Mais si le Japon a su étendre sa vision de l’esthétique au monde entier, il n’est pas pour autant resté imperméable à ce que le reste du monde avait à lui offrir. En effet, alors que les nouvelles générations abandonnent petit à petit le style japonais pour adopter des pratiques vestimentaires plus occidentales, les américains ont joué un rôle crucial dans le développement d’un nouveau courant vestimentaire : le streetwear.
+                <button><a href="https://www.sitegeek.fr/societe/fan-du-japon-et-de-streetwear-mariez-vos-passions/" target="_blank">SITE_GEEK</a></button>
+        </article>
+        
+    </div>
+    
+</main>
+
+    <footer>
+        <p>
+        &copy;Tous Droits Réservés 2022 | <a
+            href="mailto:richard.schulze@laplateforme.io">richard.schulze@laplateforme.io</a></p>
+            <img id="contact_bas" src="ressources/contact.png" alt="">
+                <ul id="footer">
+                <li class="item-nav"><a href="quefaire.html">Que visiter ?</a></li>
+                <li class="item-nav"><a href="voyager.html">Voyager</a></li>
+                <li class="item-nav"><a href="nous_contacter.html">Nous contacter</a></li>
+            </ul>
+    </footer>
+
+
+
+
+
+    <script>
+        const btnMenu = document.querySelector('.logo-menu');
+const menu = document.querySelector('.liste-nav');
+
+btnMenu.addEventListener('click', function(){
+    menu.classList.toggle('active');
+})
+
+
+const allLinks = document.querySelectorAll('.item-nav');
+
+allLinks.forEach(function(item){
+
+    item.addEventListener('click', function(){
+        menu.classList.toggle('active');
+    })
+
+})
+    </script>
+</body>
+</html>
