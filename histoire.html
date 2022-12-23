@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un peu d'histoire</title>
+     <link rel="stylesheet" href="style.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+
+     <nav>
+        
+            <ul class="liste-nav">
+                <li class="item-nav"><a href="index.html">Accueil</a></li>
+                <li class="item-nav"><a href="quefaire.html">Que visiter ?</a></li>
+                <li class="item-nav"><a href="voyager.html">Voyager</a></li>
+                <li class="item-nav"><a href="nous_contacter.html">Nous contacter</a></li>
+            </ul>
+            <img src="ressources/menu.svg" alt="logo menu" class="logo-menu">
+         
+    </nav> 
+   
+
+
+    <!-- Accueil -->
+<main>
+    <div class="histoire">
+        <div class="histoire_accueil" >
+            <img src="ressources/logo_samourai.png" alt="logo samourai du japon" class="logo-kyoto">
+            <h1>Le Japon</h1>
+            <p class="sous-titre">et son histoire</p>
+            
+        </div>
+            <div class="histoire_titre">
+                <h2 >JAPON 日本</h2><br>
+                Pays en Asie de l'Est
+            </div>
+
+                <div class="histoire_japon">
+                        <p><strong>Le Japon</strong> est un pays insulaire situé dans l'océan Pacifique. Il comporte des villes denses, des palais impériaux, des parcs nationaux montagneux ainsi que des milliers de temples et de sanctuaires. Les trains à grande vitesse Shinkansen relient les îles principales de Kyūshū (avec les plages subtropicales d'Okinawa), Honshū (où se trouvent Tokyo et le mémorial).  </p>
+                        <button class="btn_histoire_japon" type="button"><a href="https://fr.wikipedia.org/wiki/Japon"
+                                target="_blank">Japon ?</a></button>
+                    </div><br>
+            
+    </div><hr style="border:2px solid black;"><br>  
+
+    <div class="histoire_titre_samourai">
+        <h2 >SAMOURAI 侍</h2><br>
+            
+    </div>
+        <div class="samourai_japon">
+            <img src="ressources/logo_samourai.png" alt="">
+                
+                <p><strong>Les Samouraïs</strong> seraient à l'origine des gardes du palais impérial au début du xe siècle, se fondant sur les premiers documents mentionnant le mot samurai (ou plutôt saburai, « en service », qui se déforma plus tard en samurai). S'il rejette rapidement cette hypothèse, arguant que les meilleurs élevages de chevaux se trouvaient dans le Kantō et le Tōhoku et que les armures o-yoroi furent mises au point sur le champ de bataille et non dans la paix de la cour, cette hypothèse est en revanche la seule origine citée par Stephen Turnbull dans son Samurai Sourcebook, (p. 8).  </p>
+                <button class="btn_samourai_japon" type="button"><a href="https://fr.wikipedia.org/wiki/Samoura%C3%AF#Histoire"
+                        target="_blank">SAMOURAI</a></button>
+            </div>
+            <img src="ressources/sam_right.png" alt="">
+            
+    </div> 
+
+</main>  
+
+
+        <footer>
+            <p>
+            &copy;Tous Droits Réservés 2022 | <a
+                href="mailto:richard.schulze@laplateforme.io">richard.schulze@laplateforme.io</a></p>
+                <img id="contact_bas" src="ressources/contact.png" alt="">
+                    <ul id="footer">
+                    <li class="item-nav"><a href="index.html">Accueil</a></li>
+                    <li class="item-nav"><a href="quefaire.html">Que visiter ?</a></li>
+                    <li class="item-nav"><a href="voyager.html">Voyager</a></li>
+                    <li class="item-nav"><a href="nous_contacter.html">Nous contacter</a></li>
+                </ul>
+        </footer>
+        
+    <script>
+        const btnMenu = document.querySelector('.logo-menu');
+        const menu = document.querySelector('.liste-nav');
+
+        btnMenu.addEventListener('click', function(){
+        menu.classList.toggle('active');
+        })  
+        const allLinks = document.querySelectorAll('.item-nav');
+
+        allLinks.forEach(function(item){
+
+        item.addEventListener('click', function(){
+        menu.classList.toggle('active');
+        })
+
+        })
+    </script>
+
+</body>
+
+</html>
